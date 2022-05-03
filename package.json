@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "launch": "nodemon --exec babel-node products_server.js"
+  },
+  "version": "1.0.0",
+  "main": "",
+  "author": "Wesley Nworisa"
+}
