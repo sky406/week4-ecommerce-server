@@ -32,9 +32,6 @@ server.get("/",(req,res)=>{
 server.get("/products",(req,res) =>{
     db.query("CALL `getAll`",function(err,result){
         if(err) throw err;
-        console.log("test")
-        console.log(result[0][0].restock_Date)
-        console.log(typeof(result[0][0].restock_Date))
         res.json(result[0])
     })
     // res.json(ladders)
