@@ -2,8 +2,55 @@ GET  http://localhost:6969/products
 
 ###
 
-GET http://localhost:6969/products/2
+GET http://localhost:6969/products/1
 
 ###
 
 GET  http://localhost:6969/
+
+###
+
+POST http://localhost:6969/admin/add
+Content-Type: application/json
+
+
+    {
+        "name":"test",
+        "price_d":12,
+        "price_c":"11",
+        "availibilty":13,
+        "restock_Date": "2021-12-12",
+        "img_url":"notarul",
+        "description":"test" 
+    }
+
+
+
+### 
+GET http://localhost:6969/admin/products
+
+###
+POST http://localhost:6969/admin/login
+Content-Type: application/json
+
+{
+    "name":"admin",
+    "pass":"1234"
+}
+
+###
+POST  http://localhost:6969/admin/update
+Content-Type: application/json
+
+{
+    "Id":8,
+    "name":"test dummy",
+    "price_d":69,
+    "price_c":69,
+    "availibility":300,
+    "restock_Date":"2022-05-20",
+    "img_url":"data:image/jpeg;base64,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",
+    "description":"never gonna give you up"
+    
+   
+}
